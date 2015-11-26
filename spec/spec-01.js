@@ -1800,7 +1800,7 @@ module.exports = isArray || function (val) {
   var expect = require("./expect");
 
   describe("関数 id を以下の条件を満たすように定義せよ", function(){
-    
+
     context("引数に数値が指定された場合、", function(){
       it("引数に指定した数値と同じ値を返す", function(){
         expect(id(5)).to.be(5);
@@ -1820,7 +1820,7 @@ module.exports = isArray || function (val) {
         expect(id(false)).to.be(false);
       });
     });
-    
+
   });
 
   boot();
@@ -1835,7 +1835,7 @@ module.exports = isArray || function (val) {
     console.log("boot");
     window.addEventListener("load", function(){
       console.log("start unit test");
-      mocha.run(); 
+      mocha.run();
     });
   };
 
@@ -2484,7 +2484,7 @@ module.exports = isArray || function (val) {
       if (isDate(value) && $keys.length === 0) {
         return stylize(value.toUTCString(), 'date');
       }
-      
+
       // Error objects can be shortcutted
       if (value instanceof Error) {
         return stylize("["+value.toString()+"]", 'Error');
